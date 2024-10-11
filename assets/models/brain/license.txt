@@ -1,0 +1,11 @@
+Model Information:
+* title:	pink brain
+* source:	https://sketchfab.com/3d-models/pink-brain-b032ee889d844af9b4acd4a2c1ccbba5
+* author:	msurovik (https://sketchfab.com/msurovik)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "pink brain" (https://sketchfab.com/3d-models/pink-brain-b032ee889d844af9b4acd4a2c1ccbba5) by msurovik (https://sketchfab.com/msurovik) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
