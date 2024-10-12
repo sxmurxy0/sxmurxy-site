@@ -2,11 +2,14 @@
 <html>
     <head>
         <meta charset="utf-8">
+        <meta name="author" content="sxmurxy">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- <link rel="icon" href="./assets/icons/?.png"> -->
+        <link rel="stylesheet" href="./style.css">
         <title>sxmurxy's page</title>
-        <link rel="icon" href="assets/icons/brainstorm.png">
-        <script type="module" src="scene.js"></script>
     </head>
     <body>
-        <div id="scene"></div>
+        <canvas id="shader_canvas" vertex="./assets/shaders/vertex.vsh" fragment="./assets/shaders/background.fsh"></canvas>
+        <script src="./background.js"></script>
     </body>
 </html>
