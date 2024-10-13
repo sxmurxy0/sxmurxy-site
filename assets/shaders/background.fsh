@@ -2,6 +2,8 @@
 precision highp float;
 #endif
 
+#extension GL_OES_standard_derivatives : enable
+
 #define NUM_OCTAVES 6
 
 uniform float time;
@@ -16,7 +18,6 @@ mat3 rotX(float a) {
     0, s, c
     );
 }
-
 mat3 rotY(float a) {
     float c = cos(a);
     float s = sin(a);
@@ -83,19 +84,22 @@ void main(void) {
     color = mix(
     color,
     vec3(1.0, 1.0, 1.0),
+    //vec3(0.4, 0.1, 0.0),
     clamp(length(q), 2.0, 2.0)
     );
 
 
     color = mix(
     color,
+    //vec3(0.0, 1.0, 0.0),
     vec3(0.3, 0.2, 1.0),
     clamp(length(r.x), 0.0, 5.0)
     );
 
-    color = 4.0*(f * f * f) * color;
+    color = (f * f * f * 1.0 + 0.5 * 1.7 * 0.0 + 0.9 * f) * color;
 
     vec2 uv = gl_FragCoord.xy / resolution.xy;
     float alpha = 50.0 - max(pow(100.0 * distance(uv.x, -1.0), 0.0), pow(2.0 * distance(uv.y, 0.5), 5.0));
+    gl_FragColor = vec4(color * 100.0, color.r);
     gl_FragColor = vec4(color, alpha * color.r);
 }

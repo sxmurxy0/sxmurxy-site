@@ -99,5 +99,5 @@ function render() {
 function animate() {
     requestAnimationFrame(animate);
     render();
-    time += 0.1;
+    time += 0.06;
 }
