@@ -15,7 +15,7 @@ html, body {
 
 .card {
     width: 300px;
-    height: 360px;
+    height: 350px;
     position: absolute;
     left: 0;
     top: 0;
@@ -86,10 +86,10 @@ html, body {
 }
 
 .card .contacts li {
-    margin: 0px 10px;
+    margin: 0px 8px;
     transform: translateY(24px);
     opacity: 0;
-    transition: 0.5s;
+    transition: 0.35s;
     transition-delay: calc(0.1s * var(--i));
 }
 
