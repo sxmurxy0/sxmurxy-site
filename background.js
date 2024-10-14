@@ -87,7 +87,7 @@ function render() {
     gl.uniform1f(timeUniformLocation, time);
 
     let resolutionUniformLocation = gl.getUniformLocation(program, "resolution");
-    gl.uniform2f(resolutionUniformLocation, canvas.offsetWidth / 4, canvas.offsetHeight / 4);
+    gl.uniform2f(resolutionUniformLocation, canvas.width, canvas.height);
 
     let positionAttributeLocation = gl.getAttribLocation(program, "position");
     gl.enableVertexAttribArray(positionAttributeLocation);
@@ -99,5 +99,5 @@ function render() {
 function animate() {
     requestAnimationFrame(animate);
     render();
-    time += 0.06;
+    time += 0.08;
 }
